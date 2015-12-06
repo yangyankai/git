@@ -1,0 +1,30 @@
+1. 合并远程分支（remoteBranch）
+（注意理解分布式含义，只要连网就不能获取远程信息）
+git fetch origin （获取远程分支，及其他新的信息）
+git checkout -b localBranch origin/remoteBranch //新建本地分支、切换到本地分支、使本地分支对应远程分支
+git checkout master  //切到maser分支
+git  merge localBranch     //合并localBracn到master分支（merge到当前分支，因为当前分支是master，所以会merge到master分支）
+git push origin/master       //推送本地分支到远程
+
+2. 新建本地分支推送到远程
+git branch newBranch   新建
+git checkout newBranch  切换到当前分支
+git push origin   //推送到远程
+
+3.两个有冲突的版本的合并
+提交冲突会提示你先pull
+git pull 之后会出现冲突的地方，冲突地方不会丢失
+手动解决之后 添加冲突文件 git add
+git commit -m"解决冲突"
+git push origin master  提交
+
+4. 发布版本，打标签tag
+
+git tag mTag 新建
+git tag 查看
+git push origin --tags  推送到远程
+
+
+
+
+
