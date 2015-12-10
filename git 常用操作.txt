@@ -1,28 +1,36 @@
-1. ºÏ²¢Ô¶³Ì·ÖÖ§£¨remoteBranch£©
-£¨×¢ÒâÀí½â·Ö²¼Ê½º¬Òå£¬Ö»ÒªÁ¬Íø¾Í²»ÄÜ»ñÈ¡Ô¶³ÌĞÅÏ¢£©
-git fetch origin £¨»ñÈ¡Ô¶³Ì·ÖÖ§£¬¼°ÆäËûĞÂµÄĞÅÏ¢£©
-git checkout -b localBranch origin/remoteBranch //ĞÂ½¨±¾µØ·ÖÖ§¡¢ÇĞ»»µ½±¾µØ·ÖÖ§¡¢Ê¹±¾µØ·ÖÖ§¶ÔÓ¦Ô¶³Ì·ÖÖ§
-git checkout master  //ÇĞµ½maser·ÖÖ§
-git  merge localBranch     //ºÏ²¢localBracnµ½master·ÖÖ§£¨mergeµ½µ±Ç°·ÖÖ§£¬ÒòÎªµ±Ç°·ÖÖ§ÊÇmaster£¬ËùÒÔ»ámergeµ½master·ÖÖ§£©
-git push origin/master       //ÍÆËÍ±¾µØ·ÖÖ§µ½Ô¶³Ì
+1. åˆå¹¶è¿œç¨‹åˆ†æ”¯ï¼ˆremoteBranchï¼‰
+ï¼ˆæ³¨æ„ç†è§£åˆ†å¸ƒå¼å«ä¹‰ï¼Œåªè¦è¿ç½‘å°±ä¸èƒ½è·å–è¿œç¨‹ä¿¡æ¯ï¼‰
+git fetch origin ï¼ˆè·å–è¿œç¨‹åˆ†æ”¯ï¼ŒåŠå…¶ä»–æ–°çš„ä¿¡æ¯ï¼‰
+git checkout -b localBranch origin/remoteBranch //æ–°å»ºæœ¬åœ°åˆ†æ”¯ã€åˆ‡æ¢åˆ°æœ¬åœ°åˆ†æ”¯ã€ä½¿æœ¬åœ°åˆ†æ”¯å¯¹åº”è¿œç¨‹åˆ†æ”¯
+git checkout master  //åˆ‡åˆ°maseråˆ†æ”¯
+git  merge localBranch     //åˆå¹¶localBracnåˆ°masteråˆ†æ”¯ï¼ˆmergeåˆ°å½“å‰åˆ†æ”¯ï¼Œå› ä¸ºå½“å‰åˆ†æ”¯æ˜¯masterï¼Œæ‰€ä»¥ä¼šmergeåˆ°masteråˆ†æ”¯ï¼‰
+git push origin/master       //æ¨é€æœ¬åœ°åˆ†æ”¯åˆ°è¿œç¨‹
 
-2. ĞÂ½¨±¾µØ·ÖÖ§ÍÆËÍµ½Ô¶³Ì
-git branch newBranch   ĞÂ½¨
-git checkout newBranch  ÇĞ»»µ½µ±Ç°·ÖÖ§
-git push origin   //ÍÆËÍµ½Ô¶³Ì
+2. æ–°å»ºæœ¬åœ°åˆ†æ”¯æ¨é€åˆ°è¿œç¨‹
+git branch newBranch   æ–°å»º
+git checkout newBranch  åˆ‡æ¢åˆ°å½“å‰åˆ†æ”¯
+git push origin   //æ¨é€åˆ°è¿œç¨‹
 
-3.Á½¸öÓĞ³åÍ»µÄ°æ±¾µÄºÏ²¢
-Ìá½»³åÍ»»áÌáÊ¾ÄãÏÈpull
-git pull Ö®ºó»á³öÏÖ³åÍ»µÄµØ·½£¬³åÍ»µØ·½²»»á¶ªÊ§
-ÊÖ¶¯½â¾öÖ®ºó Ìí¼Ó³åÍ»ÎÄ¼ş git add
-git commit -m"½â¾ö³åÍ»"
-git push origin master  Ìá½»
+3.ä¸¤ä¸ªæœ‰å†²çªçš„ç‰ˆæœ¬çš„åˆå¹¶
+æäº¤å†²çªä¼šæç¤ºä½ å…ˆpull
+git pull ä¹‹åä¼šå‡ºç°å†²çªçš„åœ°æ–¹ï¼Œå†²çªåœ°æ–¹ä¸ä¼šä¸¢å¤±
+æ‰‹åŠ¨è§£å†³ä¹‹å æ·»åŠ å†²çªæ–‡ä»¶ git add
+git commit -m"è§£å†³å†²çª"
+git push origin master  æäº¤
 
-4. ·¢²¼°æ±¾£¬´ò±êÇ©tag
+4. å‘å¸ƒç‰ˆæœ¬ï¼Œæ‰“æ ‡ç­¾tag
 
-git tag mTag ĞÂ½¨
-git tag ²é¿´
-git push origin --tags  ÍÆËÍµ½Ô¶³Ì
+git tag mTag æ–°å»º
+git tag æŸ¥çœ‹
+git push origin --tags  æ¨é€åˆ°è¿œç¨‹
+
+5. ä»gitçš„è·Ÿè¸ªè®°å½•ä¸­åˆ é™¤äº†è¿™ä¸ªæ–‡ä»¶çš„è·Ÿè¸ªè®°å½•
+git rm --cached project.iws
+
+6. åŠ ä¸Š-aå‚æ•°å¯ä»¥æŸ¥çœ‹è¿œç¨‹åˆ†æ”¯ï¼Œè¿œç¨‹åˆ†æ”¯ä¼šç”¨çº¢è‰²è¡¨ç¤ºå‡ºæ¥ï¼ˆå¦‚æœä½ å¼€äº†é¢œè‰²æ”¯æŒçš„è¯ï¼‰ï¼š
+git branch -a
+
+
 
 
 
