@@ -25,7 +25,8 @@ git tag 查看
 git push origin --tags  推送到远程
 
 5. 从git的跟踪记录中删除了这个文件的跟踪记录
-git rm --cached project.iws
+git rm text.txt
+(如果是子目录中的文件提示找不到，则在子目录下进行命令行操作)
 
 6. 加上-a参数可以查看远程分支，远程分支会用红色表示出来（如果你开了颜色支持的话）：
 git branch -a
